@@ -1,0 +1,1926 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>4</fileVersion>
+    <fileChecksum>2828370767</fileChecksum>
+    <configuration>
+        <name>Debug</name>
+        <outputs>
+            <file>$PROJ_DIR$\LoRaWAN\mac\LoRaMacAdr.c</file>
+            <file>$PROJ_DIR$\LoRaWAN\mac\region\RegionEU433.h</file>
+            <file>$PROJ_DIR$\LoRaWAN\mac\region\RegionEU868.c</file>
+            <file>$PROJ_DIR$\LoRaWAN\mac\region\RegionIN865.h</file>
+            <file>$PROJ_DIR$\LoRaWAN\mac\region\RegionRU864.h</file>
+            <file>$PROJ_DIR$\LoRaWAN\mac\LoRaMacClassBConfig.h</file>
+            <file>$PROJ_DIR$\LoRaWAN\mac\LoRaMacCommands.h</file>
+            <file>$PROJ_DIR$\LoRaWAN\mac\LoRaMacConfirmQueue.c</file>
+            <file>$PROJ_DIR$\LoRaWAN\mac\LoRaMacConfirmQueue.h</file>
+            <file>$PROJ_DIR$\LoRaWAN\mac\LoRaMacCrypto.c</file>
+            <file>$PROJ_DIR$\LoRaWAN\mac\region\RegionKR920.h</file>
+            <file>$PROJ_DIR$\LoRaWAN\mac\region\RegionCommon.h</file>
+            <file>$PROJ_DIR$\LoRaWAN\mac\LoRaMacClassB.h</file>
+            <file>$PROJ_DIR$\LoRaWAN\mac\LoRaMac.h</file>
+            <file>$PROJ_DIR$\LoRaWAN\mac\region\RegionCN470.c</file>
+            <file>$PROJ_DIR$\LoRaWAN\mac\region\RegionUS915.h</file>
+            <file>$PROJ_DIR$\LoRaWAN\mac\LoRaMacAdr.h</file>
+            <file>$PROJ_DIR$\LoRaWAN\mac\LoRaMacClassB.c</file>
+            <file>$PROJ_DIR$\LoRaWAN\mac\region\RegionAU915.c</file>
+            <file>$PROJ_DIR$\LoRaWAN\mac\region\RegionKR920.c</file>
+            <file>$PROJ_DIR$\LoRaWAN\mac\region\RegionEU868.h</file>
+            <file>$PROJ_DIR$\LoRaWAN\mac\region\RegionIN865.c</file>
+            <file>$PROJ_DIR$\LoRaWAN\mac\region\RegionAU915.h</file>
+            <file>$PROJ_DIR$\LoRaWAN\mac\region\RegionEU433.c</file>
+            <file>$PROJ_DIR$\LoRaWAN\mac\region\RegionCommon.c</file>
+            <file>$PROJ_DIR$\LoRaWAN\mac\LoRaMac.c</file>
+            <file>$PROJ_DIR$\LoRaWAN\mac\region\RegionUS915.c</file>
+            <file>$PROJ_DIR$\LoRaWAN\mac\LoRaMacCommands.c</file>
+            <file>$PROJ_DIR$\LoRaWAN\mac\region\RegionCN470.h</file>
+            <file>$PROJ_DIR$\LoRaWAN\mac\region\RegionCN779.c</file>
+            <file>$PROJ_DIR$\LoRaWAN\mac\region\RegionCN779.h</file>
+            <file>$PROJ_DIR$\LoRaWAN\mac\region\RegionRU864.c</file>
+            <file>$PROJ_DIR$\..\..\Source\event_groups.c</file>
+            <file>$PROJ_DIR$\..\..\Source\portable\MemMang\heap_4.c</file>
+            <file>$PROJ_DIR$\..\..\Source\timers.c</file>
+            <file>$PROJ_DIR$\LoRaWAN\mac\region\RegionAS923.c</file>
+            <file>$PROJ_DIR$\..\..\Source\queue.c</file>
+            <file>$PROJ_DIR$\LoRaWAN\mac\region\RegionAS923.h</file>
+            <file>$PROJ_DIR$\..\..\Source\portable\IAR\ARM_CM3\portasm.s</file>
+            <file>$PROJ_DIR$\..\..\Source\list.c</file>
+            <file>$PROJ_DIR$\LoRaWAN\mac\region\Region.c</file>
+            <file>$PROJ_DIR$\LoRaWAN\mac\region\Region.h</file>
+            <file>$PROJ_DIR$\..\..\Source\portable\IAR\ARM_CM3\port.c</file>
+            <file>$PROJ_DIR$\..\..\Source\tasks.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+            <file>$PROJ_DIR$\Debug\Exe\RTOSDemo.out</file>
+            <file>$PROJ_DIR$\Debug\Obj\recmutex.pbi</file>
+            <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+            <file>$PROJ_DIR$\..\..\Source\portable\IAR\ARM_CM3\portmacro.h</file>
+            <file>$PROJ_DIR$\..\..\Source\include\queue.h</file>
+            <file>$PROJ_DIR$\..\..\Source\include\task.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\iar_intrinsics_common.h</file>
+            <file>$PROJ_DIR$\..\..\Source\include\deprecated_definitions.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
+            <file>$PROJ_DIR$\..\..\Source\include\portable.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\PollQ.pbi</file>
+            <file>$PROJ_DIR$\..\..\Source\include\FreeRTOS.h</file>
+            <file>$PROJ_DIR$\..\..\Source\include\mpu_wrappers.h</file>
+            <file>$PROJ_DIR$\..\..\Source\include\projdefs.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\timer.pbi</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_stdlib.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\uart.pbi</file>
+            <file>$PROJ_DIR$\..\..\Source\include\event_groups.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_pwr_ex.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_adc_ex.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_cryp_ex.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_dma.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\RegionEU433.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_flash.o</file>
+            <file>$PROJ_DIR$\..\..\Source\include\list.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_msp_template.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\tasks.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_comp.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_flash_ex.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\RegionEU868.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_cryp.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_crc.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_dac.o</file>
+            <file>$PROJ_DIR$\..\..\Source\include\timers.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_i2s.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\timers.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_pcd.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\dynamic.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\iccarm_builtin.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_cortex.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_adc.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_pwr.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_i2c.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_opamp_ex.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_dac_ex.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_opamp.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_gpio.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_rcc.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_smartcard.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_comp.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_tim.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_iwdg.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_nor.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_ll_fsmc.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_irda.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_sd.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\RegionCN470.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_adc_ex.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_sram.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\RegionAU915.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_adc.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_rcc_ex.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_uart.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\RegionRU864.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_tim_ex.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_spi_ex.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_ll_sdmmc.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_pcd_ex.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_flash_ramfunc.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_usart.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\RegionCommon.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_lcd.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_rtc_ex.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\RegionCN779.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_rtc.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_wwdg.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_spi.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\RegionEU868.o</file>
+            <file>$PROJ_DIR$\LoRaWAN\portable\uart-board.h</file>
+            <file>$PROJ_DIR$\LoRaWAN\portable\sx1276-board.h</file>
+            <file>$PROJ_DIR$\LoRaWAN\portable\timer-board.h</file>
+            <file>$PROJ_DIR$\LoRaWAN\soft-se\aes.c</file>
+            <file>$PROJ_DIR$\LoRaWAN\portable\timer-board.c</file>
+            <file>$PROJ_DIR$\LoRaWAN\system\adc.c</file>
+            <file>$PROJ_DIR$\LoRaWAN\system\fifo.c</file>
+            <file>$PROJ_DIR$\LoRaWAN\system\eeprom.c</file>
+            <file>$PROJ_DIR$\LoRaWAN\system\gpio.c</file>
+            <file>$PROJ_DIR$\LoRaWAN\system\gps.c</file>
+            <file>$PROJ_DIR$\LoRaWAN\system\i2c.c</file>
+            <file>$PROJ_DIR$\LoRaWAN\soft-se\soft-se-hal.c</file>
+            <file>$PROJ_DIR$\LoRaWAN\portable\uart-board.c</file>
+            <file>$PROJ_DIR$\LoRaWAN\soft-se\cmac.c</file>
+            <file>$PROJ_DIR$\LoRaWAN\radio\sx1276\sx1276.c</file>
+            <file>$PROJ_DIR$\LoRaWAN\soft-se\soft-se.c</file>
+            <file>$PROJ_DIR$\LoRaWAN\system\delay.c</file>
+            <file>$PROJ_DIR$\LoRaWAN\portable\pinName-board.h</file>
+            <file>$PROJ_DIR$\LoRaWAN\portable\adc-board.c</file>
+            <file>$PROJ_DIR$\LoRaWAN\portable\board.h</file>
+            <file>$PROJ_DIR$\LoRaWAN\portable\eeprom-board.h</file>
+            <file>$PROJ_DIR$\LoRaWAN\portable\pinName-ioe.h</file>
+            <file>$PROJ_DIR$\LoRaWAN\portable\rtc-board.c</file>
+            <file>$PROJ_DIR$\LoRaWAN\portable\rtc-board.h</file>
+            <file>$PROJ_DIR$\LoRaWAN\portable\gpio-board.h</file>
+            <file>$PROJ_DIR$\LoRaWAN\portable\spi-board.c</file>
+            <file>$PROJ_DIR$\LoRaWAN\portable\delay-board.h</file>
+            <file>$PROJ_DIR$\LoRaWAN\mac\LoRaMacTest.h</file>
+            <file>$PROJ_DIR$\LoRaWAN\mac\LoRaMacCrypto.h</file>
+            <file>$PROJ_DIR$\LoRaWAN\portable\gpio-board.c</file>
+            <file>$PROJ_DIR$\LoRaWAN\portable\spi-board.h</file>
+            <file>$PROJ_DIR$\LoRaWAN\mac\LoRaMacSerializer.c</file>
+            <file>$PROJ_DIR$\LoRaWAN\portable\sx1276-board.c</file>
+            <file>$PROJ_DIR$\LoRaWAN\mac\LoRaMacHeaderTypes.h</file>
+            <file>$PROJ_DIR$\LoRaWAN\portable\i2c-board.h</file>
+            <file>$PROJ_DIR$\LoRaWAN\mac\LoRaMacParser.h</file>
+            <file>$PROJ_DIR$\LoRaWAN\mac\LoRaMacTypes.h</file>
+            <file>$PROJ_DIR$\LoRaWAN\portable\adc-board.h</file>
+            <file>$PROJ_DIR$\LoRaWAN\portable\gps-board.c</file>
+            <file>$PROJ_DIR$\LoRaWAN\mac\LoRaMacSerializer.h</file>
+            <file>$PROJ_DIR$\LoRaWAN\mac\secure-element.h</file>
+            <file>$PROJ_DIR$\LoRaWAN\portable\eeprom-board.c</file>
+            <file>$PROJ_DIR$\LoRaWAN\portable\gps-board.h</file>
+            <file>$PROJ_DIR$\LoRaWAN\mac\LoRaMacMessageTypes.h</file>
+            <file>$PROJ_DIR$\LoRaWAN\portable\i2c-board.c</file>
+            <file>$PROJ_DIR$\LoRaWAN\portable\board.c</file>
+            <file>$PROJ_DIR$\LoRaWAN\mac\LoRaMacParser.c</file>
+            <file>$PROJ_DIR$\LoRaWAN\portable\delay-board.c</file>
+            <file>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_pcd.c</file>
+            <file>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_i2c.c</file>
+            <file>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_msp_template.c</file>
+            <file>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_pwr.c</file>
+            <file>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_rcc.c</file>
+            <file>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_rcc_ex.c</file>
+            <file>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_spi_ex.c</file>
+            <file>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_opamp.c</file>
+            <file>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_sram.c</file>
+            <file>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_pcd_ex.c</file>
+            <file>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_uart.c</file>
+            <file>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_opamp_ex.c</file>
+            <file>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_rtc.c</file>
+            <file>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_rtc_ex.c</file>
+            <file>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_smartcard.c</file>
+            <file>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_spi.c</file>
+            <file>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_usart.c</file>
+            <file>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_gpio.c</file>
+            <file>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_flash.c</file>
+            <file>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_pwr_ex.c</file>
+            <file>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_flash_ramfunc.c</file>
+            <file>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_i2s.c</file>
+            <file>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_iwdg.c</file>
+            <file>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_sd.c</file>
+            <file>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_nor.c</file>
+            <file>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_tim.c</file>
+            <file>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_tim_ex.c</file>
+            <file>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_dma.c</file>
+            <file>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_wwdg.c</file>
+            <file>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_flash_ex.c</file>
+            <file>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_irda.c</file>
+            <file>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_lcd.c</file>
+            <file>$PROJ_DIR$\LoRaWAN\system\uart.c</file>
+            <file>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_cryp_ex.c</file>
+            <file>$PROJ_DIR$\LoRaWAN\system\systime.c</file>
+            <file>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_crc.c</file>
+            <file>$PROJ_DIR$\ST_Code\CMSIS\system_stm32l1xx.c</file>
+            <file>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_dac.c</file>
+            <file>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_dac_ex.c</file>
+            <file>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_adc_ex.c</file>
+            <file>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_adc.c</file>
+            <file>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_comp.c</file>
+            <file>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal.c</file>
+            <file>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_cortex.c</file>
+            <file>$PROJ_DIR$\LoRaWAN\utilities\utilities.c</file>
+            <file>$PROJ_DIR$\LoRaWAN\system\timer.c</file>
+            <file>$PROJ_DIR$\LoRaWAN\utilities\cJSON.c</file>
+            <file>$PROJ_DIR$\LoRaWAN\system\nvmm.c</file>
+            <file>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_cryp.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_uart.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_sram.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_tim_ex.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_tim.pbi</file>
+            <file>$PROJ_DIR$\..\Common\Minimal\blocktim.c</file>
+            <file>$PROJ_DIR$\main_lorawan.c</file>
+            <file>$PROJ_DIR$\..\Common\Minimal\semtest.c</file>
+            <file>$PROJ_DIR$\..\Common\Minimal\countsem.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_rtc_ex.pbi</file>
+            <file>$PROJ_DIR$\System\startup_stm32l151xb.s</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_rcc.pbi</file>
+            <file>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_ll_fsmc.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_spi_ex.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_spi.pbi</file>
+            <file>$PROJ_DIR$\include\FreeRTOSConfig.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_ll_sdmmc.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_smartcard.pbi</file>
+            <file>$PROJ_DIR$\..\Common\Minimal\PollQ.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_rtc.pbi</file>
+            <file>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_ll_sdmmc.c</file>
+            <file>$PROJ_DIR$\..\Common\Minimal\GenQTest.c</file>
+            <file>$PROJ_DIR$\..\Common\Minimal\recmutex.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_sd.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_rcc_ex.pbi</file>
+            <file>$PROJ_DIR$\..\Common\Minimal\dynamic.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_ll_fsmc.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_pwr_ex.pbi</file>
+            <file>$PROJ_DIR$\..\Common\Minimal\BlockQ.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_wwdg.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\semtest.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\recmutex.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\heap_4.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_usart.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\GenQTest.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\semtest.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\system_stm32l1xx.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\portasm.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\tasks.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\event_groups.pbi</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\GenQTest.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\RTOSDemo.pbd</file>
+            <file>$PROJ_DIR$\Debug\Obj\list.pbi</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+            <file>$PROJ_DIR$\Debug\Exe\RTOSDemo.hex</file>
+            <file>$PROJ_DIR$\Debug\Obj\system_stm32l1xx.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\RegionKR920.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\RegionUS915.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\utilities.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\RegionAS923.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\RegionAU915.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\Region.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\RegionAS923.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\RegionEU433.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\RegionUS915.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\cJSON.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\Region.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\utilities.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\cJSON.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\RegionRU864.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\LoRaMacClassB.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\gpio-board.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\delay-board.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_dac.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_i2c.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_gpio.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\LoRaMacSerializer.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_cryp_ex.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\soft-se-hal.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_flash.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\spi-board.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\LoRaMacConfirmQueue.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_dma.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_flash_ramfunc.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_irda.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\soft-se.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\board.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\gps-board.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\i2c-board.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\LoRaMacAdr.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_i2s.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_flash_ex.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\sx1276.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\rtc-board.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\adc-board.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\aes.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_dac_ex.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\cmac.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\LoRaMac.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\eeprom-board.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\aes.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\sx1276.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\main_lorawan.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\RegionCommon.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\BlockQ.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\queue.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\event_groups.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\i2c.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\countsem.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\heap_4.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\fifo.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\RegionIN865.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\dynamic.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_cortex.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\list.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\timers.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\RegionKR920.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\main_lorawan.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\countsem.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\RegionCN779.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\port.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\BlockQ.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\RegionCN470.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\queue.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\port.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_crc.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\PollQ.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\nvmm.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\gpio.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\gpio.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_cryp.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\blocktim.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\delay.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\blocktim.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\uart.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_nor.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\delay.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\eeprom.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\systime.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\i2c-board.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\systime.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\sx1276-board.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\delay-board.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\LoRaMacAdr.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_opamp.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_pwr.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\timer-board.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_opamp_ex.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\adc.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\startup_stm32l151xb.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_iwdg.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\timer.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_lcd.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_pcd_ex.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\adc.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\fifo.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\nvmm.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_msp_template.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\eeprom.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\gps.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\i2c.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\gps.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l1xx_hal_pcd.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\uart-board.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\LoRaMacCrypto.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\LoRaMacCrypto.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\uart-board.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\soft-se.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\timer-board.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\LoRaMacParser.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\cmac.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\RegionIN865.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\LoRaMacParser.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\eeprom-board.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\gpio-board.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\LoRaMacClassB.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\sx1276-board.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\spi-board.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\LoRaMac.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\gps-board.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\rtc-board.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\LoRaMacSerializer.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\LoRaMacCommands.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\LoRaMacConfirmQueue.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\LoRaMacCommands.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\soft-se-hal.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\adc-board.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\board.pbi</file>
+        </outputs>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 45</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\LoRaWAN\mac\LoRaMacAdr.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 308</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 362</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\LoRaWAN\mac\region\RegionEU868.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 130</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 80</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\LoRaWAN\mac\LoRaMacConfirmQueue.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 402</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 300</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\LoRaWAN\mac\LoRaMacCrypto.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 384</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 383</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\LoRaWAN\mac\region\RegionCN470.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 108</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 341</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\LoRaWAN\mac\LoRaMacClassB.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 394</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 289</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\LoRaWAN\mac\region\RegionAU915.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 111</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 279</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\LoRaWAN\mac\region\RegionKR920.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 275</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 335</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\LoRaWAN\mac\region\RegionIN865.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 390</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 330</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\LoRaWAN\mac\region\RegionEU433.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 282</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 73</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\LoRaWAN\mac\region\RegionCommon.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 123</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 322</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\LoRaWAN\mac\LoRaMac.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 317</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 397</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\LoRaWAN\mac\region\RegionUS915.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 283</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 276</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\LoRaWAN\mac\LoRaMacCommands.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 403</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 401</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\LoRaWAN\mac\region\RegionCN779.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 126</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 338</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\LoRaWAN\mac\region\RegionRU864.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 288</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 116</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\Source\event_groups.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 325</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 267</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 57 48 55 84 272 56 60 90 59 64 54 63 242 259 50 66 67 68 61 53 44 52 75 268</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\Source\portable\MemMang\heap_4.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 260</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 328</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 64 55 242 59 259 50 63 67 68 56 57 48 60 52 75 268 272 54 61 53 44 90</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\Source\timers.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 334</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 86</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\LoRaWAN\mac\region\RegionAS923.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 278</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 281</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\Source\queue.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 342</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 324</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 55 51 259 50 63 67 68 61 53 44 90 47 59 49 64 272 54 56 242 57 48 60 52 268 75</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\Source\portable\IAR\ARM_CM3\portasm.s</name>
+            <outputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 265</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\Source\list.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 333</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 271</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 57 67 63 56 75 68 55 242 59 64 272 54 259 61 53 44 90 268 48 60 52</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\LoRaWAN\mac\region\Region.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 285</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 280</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\Source\portable\IAR\ARM_CM3\port.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 343</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 339</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 52 259 63 60 50 55 67 48 59 90 61 75 44 68 272 54 56 242 57 53</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\Source\tasks.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 266</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 77</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Debug\Exe\RTOSDemo.out</name>
+            <outputs>
+                <tool>
+                    <name>OBJCOPY</name>
+                    <file> 273</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\LoRaWAN\soft-se\aes.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 314</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 319</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\LoRaWAN\portable\timer-board.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 387</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 365</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\LoRaWAN\system\adc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 367</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 373</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\LoRaWAN\system\fifo.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 374</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 329</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\LoRaWAN\system\eeprom.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 356</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 377</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\LoRaWAN\system\gpio.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 348</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 347</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\LoRaWAN\system\gps.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 378</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 380</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\LoRaWAN\system\i2c.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 379</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 326</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\LoRaWAN\soft-se\soft-se-hal.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 297</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 404</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\LoRaWAN\portable\uart-board.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 382</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 385</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\LoRaWAN\soft-se\cmac.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 316</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 389</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\LoRaWAN\radio\sx1276\sx1276.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 320</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 311</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\LoRaWAN\soft-se\soft-se.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 304</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 386</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\LoRaWAN\system\delay.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 355</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 351</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\LoRaWAN\portable\adc-board.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 313</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 405</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\LoRaWAN\portable\rtc-board.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 312</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 399</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\LoRaWAN\portable\spi-board.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 299</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 396</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\LoRaWAN\portable\gpio-board.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 290</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 393</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\LoRaWAN\mac\LoRaMacSerializer.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 400</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 295</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\LoRaWAN\portable\sx1276-board.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 395</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 360</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\LoRaWAN\portable\gps-board.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 306</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 398</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\LoRaWAN\portable\eeprom-board.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 318</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 392</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\LoRaWAN\portable\i2c-board.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 307</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 358</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\LoRaWAN\portable\board.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 305</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 406</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\LoRaWAN\mac\LoRaMacParser.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 388</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 391</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\LoRaWAN\portable\delay-board.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 291</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 361</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_pcd.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 87</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 381</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_i2c.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 94</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 293</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_msp_template.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 76</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 376</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_pwr.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 93</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 364</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_rcc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 99</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 238</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_rcc_ex.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 113</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 251</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_spi_ex.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 118</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 240</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_opamp.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 97</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 363</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_sram.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 110</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 229</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_pcd_ex.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 120</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 372</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_uart.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 115</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 228</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_opamp_ex.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 95</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 366</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_rtc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 127</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 246</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_rtc_ex.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 125</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 236</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_smartcard.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 100</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 244</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_spi.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 129</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 241</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_usart.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 122</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 261</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_gpio.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 98</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 294</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_flash.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 74</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 298</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_pwr_ex.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 69</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 254</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_flash_ramfunc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 121</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 302</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_i2s.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 85</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 309</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_iwdg.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 103</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 369</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_sd.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 107</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 250</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_nor.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 104</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 354</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_tim.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 102</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 231</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_tim_ex.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 117</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 230</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_dma.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 72</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 301</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_wwdg.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 128</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 256</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_flash_ex.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 79</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 310</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_irda.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 106</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 303</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_lcd.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 124</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 371</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\LoRaWAN\system\uart.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 353</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 65</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_cryp_ex.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 71</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 296</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\LoRaWAN\system\systime.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 357</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 359</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_crc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 82</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 344</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\ST_Code\CMSIS\system_stm32l1xx.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 274</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 264</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_dac.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 83</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 292</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_dac_ex.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 96</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 315</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_adc_ex.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 70</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 109</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_adc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 92</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 112</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_comp.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 78</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 101</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 89</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 114</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_cortex.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 91</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 332</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\LoRaWAN\utilities\utilities.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 286</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 277</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\LoRaWAN\system\timer.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 370</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 62</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\LoRaWAN\utilities\cJSON.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 284</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 287</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\LoRaWAN\system\nvmm.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 346</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 375</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_cryp.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 81</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 349</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Common\Minimal\blocktim.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 350</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 352</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\main_lorawan.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 321</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 336</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Common\Minimal\semtest.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 263</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 257</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Common\Minimal\countsem.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 337</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 327</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\System\startup_stm32l151xb.s</name>
+            <outputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 368</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_ll_fsmc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 105</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 253</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Common\Minimal\PollQ.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 345</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 58</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\ST_Code\STM32L1xx_HAL_Driver\Src\stm32l1xx_ll_sdmmc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 119</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 243</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Common\Minimal\GenQTest.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 269</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 262</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Common\Minimal\recmutex.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 258</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 46</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Common\Minimal\dynamic.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 331</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 88</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Common\Minimal\BlockQ.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 340</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 323</file>
+                </tool>
+            </outputs>
+        </file>
+    </configuration>
+</project>
