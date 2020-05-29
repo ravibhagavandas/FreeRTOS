@@ -40,17 +40,6 @@ Maintainer: Andreas Pella (IMST GmbH), Miguel Luis and Gregory Cristian
 #include "sx1276-board.h"
 
 /*!
- * Generic definition
- */
-#ifndef SUCCESS
-#define SUCCESS                                     1
-#endif
-
-#ifndef FAIL
-#define FAIL                                        0
-#endif
-
-/*!
  * Board MCU pins definitions
  */
 #ifdef LORA_HF_BOARD

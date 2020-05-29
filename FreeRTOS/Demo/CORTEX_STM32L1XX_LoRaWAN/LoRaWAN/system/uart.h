@@ -34,6 +34,9 @@ extern "C"
 /*!
  * UART peripheral ID
  */
+/*!
+ * UART peripheral ID
+ */
 typedef enum
 {
     UART_1 = 1,
@@ -42,6 +45,7 @@ typedef enum
     UART_COUNT,
     UART_USB_CDC = 255,
 }UartId_t;
+
 /*!
  * UART notification identifier
  */

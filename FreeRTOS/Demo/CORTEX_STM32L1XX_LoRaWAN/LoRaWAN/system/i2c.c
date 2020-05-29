@@ -24,17 +24,19 @@
 #include "utilities.h"
 #include "i2c-board.h"
 
+#ifndef SUCCESS
+#define SUCCESS                                     1
+#endif
+
+#ifndef FAIL
+#define FAIL                                        0
+#endif
+
+
 /*!
  * Flag to indicates if the I2C is initialized
  */
 static bool I2cInitialized = false;
-
-#ifndef SUCCESS
-#define SUCCESS 1
-#endif
-#ifndef FAIL
-#define FAIL 0
-#endif
 
 void I2cInit( I2c_t *obj, I2cId_t i2cId, PinNames scl, PinNames sda )
 {

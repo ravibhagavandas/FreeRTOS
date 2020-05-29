@@ -23,7 +23,6 @@ Maintainer: Miguel Luis and Gregory Cristian
  */
 #define TX_BUFFER_RETRY_COUNT                       10
 
-
 //uint8_t RxData = 0;
 
 /*!

@@ -1274,12 +1274,6 @@
                 <name>$PROJ_DIR$\LoRaWAN\portable\gpio-board.h</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\LoRaWAN\portable\gps-board.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\LoRaWAN\portable\gps-board.h</name>
-            </file>
-            <file>
                 <name>$PROJ_DIR$\LoRaWAN\portable\i2c-board.c</name>
             </file>
             <file>
@@ -1403,12 +1397,6 @@
                 <name>$PROJ_DIR$\LoRaWAN\system\gpio.h</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\LoRaWAN\system\gps.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\LoRaWAN\system\gps.h</name>
-            </file>
-            <file>
                 <name>$PROJ_DIR$\LoRaWAN\system\i2c.c</name>
             </file>
             <file>
@@ -1447,12 +1435,6 @@
         </group>
         <group>
             <name>utilities</name>
-            <file>
-                <name>$PROJ_DIR$\LoRaWAN\utilities\cJSON.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\LoRaWAN\utilities\cJSON.h</name>
-            </file>
             <file>
                 <name>$PROJ_DIR$\LoRaWAN\utilities\utilities.c</name>
             </file>

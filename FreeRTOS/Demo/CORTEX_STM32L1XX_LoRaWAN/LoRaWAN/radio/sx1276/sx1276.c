@@ -1194,7 +1194,7 @@ void SX1276StartCad( void )
 
 void SX1276SetTxContinuousWave( uint32_t freq, int8_t power, uint16_t time )
 {
-    uint32_t timeout = ( uint32_t )( time * 1000 );
+    uint32_t timeout = ( uint32_t )time * 1000;
 
     SX1276SetChannel( freq );
 
@@ -1485,8 +1485,6 @@ void SX1276OnDio0Irq( void* context )
 {
     volatile uint8_t irqFlags = 0;
 
-    e_printf("DIO irq, state = %d\n", SX1276.Settings.State);
-
     switch( SX1276.Settings.State )
     {
         case RF_RX_RUNNING:
@@ -1672,7 +1670,6 @@ void SX1276OnDio0Irq( void* context )
 
 void SX1276OnDio1Irq( void* context )
 {
-    e_printf("irq 1 state %d\n", SX1276.Settings.State );
     switch( SX1276.Settings.State )
     {
         case RF_RX_RUNNING:
@@ -1717,17 +1714,13 @@ void SX1276OnDio1Irq( void* context )
             case MODEM_LORA:
                 // Sync time out
                 TimerStop( &RxTimeoutTimer );
+                // Clear Irq
+                SX1276Write( REG_LR_IRQFLAGS, RFLR_IRQFLAGS_RXTIMEOUT );
 
-                if( ( SX1276Read( REG_LR_IRQFLAGS ) & RFLR_IRQFLAGS_RXTIMEOUT ) == RFLR_IRQFLAGS_RXTIMEOUT )
+                SX1276.Settings.State = RF_IDLE;
+                if( ( RadioEvents != NULL ) && ( RadioEvents->RxTimeout != NULL ) )
                 {
-                    // Clear Irq
-                    SX1276Write( REG_LR_IRQFLAGS, RFLR_IRQFLAGS_RXTIMEOUT );
-
-                    SX1276.Settings.State = RF_IDLE;
-                    if( ( RadioEvents != NULL ) && ( RadioEvents->RxTimeout != NULL ) )
-                    {
-                        RadioEvents->RxTimeout( );
-                    }
+                    RadioEvents->RxTimeout( );
                 }
                 break;
             default:
@@ -1839,7 +1832,6 @@ void SX1276OnDio3Irq( void* context )
     case MODEM_FSK:
         break;
     case MODEM_LORA:
-        //e_printf("IRQ flags: %d\n", SX1276Read( REG_LR_IRQFLAGS ) );
         if( ( SX1276Read( REG_LR_IRQFLAGS ) & RFLR_IRQFLAGS_CADDETECTED ) == RFLR_IRQFLAGS_CADDETECTED )
         {
             // Clear Irq

@@ -16,6 +16,8 @@ Maintainer: Miguel Luis and Gregory Cristian
 #define __TIMER_H__
 #include <stdbool.h>
 
+#define TIMERTIME_T_MAX                             ( ( uint32_t )~0 )
+
 //TODO: To replace with OS timer abstraction.
 
 /*!

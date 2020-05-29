@@ -892,16 +892,15 @@ static void ProcessRadioTxDone( void )
 
     // Update last tx done time for the current channel
     txDone.Channel = MacCtx.Channel;
+    txDone.LastTxDoneTime = TxDoneParams.CurTime;
+    txDone.ElapsedTimeSinceStartUp = SysTimeSub( SysTimeGetMcuTime( ), MacCtx.NvmCtx->InitializationTime );
+    txDone.LastTxAirTime = MacCtx.TxTimeOnAir;
+    txDone.Joined  = true;
     if( MacCtx.NvmCtx->NetworkActivation == ACTIVATION_TYPE_NONE )
     {
         txDone.Joined  = false;
     }
-    else
-    {
-        txDone.Joined  = true;
-    }
-    txDone.LastTxDoneTime = TxDoneParams.CurTime;
-    txDone.LastTxAirTime = MacCtx.TxTimeOnAir;
+
     RegionSetBandTxDone( MacCtx.NvmCtx->Region, &txDone );
 
     if( MacCtx.NodeAckRequested == false )
@@ -1620,7 +1619,7 @@ static void LoRaMacHandleMlmeRequest( void )
     // Handle join request
     if( MacCtx.MacFlags.Bits.MlmeReq == 1 )
     {
-        if( ( LoRaMacConfirmQueueIsCmdActive( MLME_JOIN ) == true ) )
+        if( LoRaMacConfirmQueueIsCmdActive( MLME_JOIN ) == true )
         {
             if( LoRaMacConfirmQueueGetStatus( MLME_JOIN ) == LORAMAC_EVENT_INFO_STATUS_OK )
             {// Node joined successfully
@@ -2380,7 +2379,6 @@ LoRaMacStatus_t SendReJoinReq( JoinReqIdentifier_t joinReqType )
 
     // Schedule frame
     status = ScheduleTx( allowDelayedTx );
-    
     return status;
 }
 
@@ -2407,7 +2405,6 @@ static LoRaMacStatus_t CheckForClassBCollision( void )
 
 static void ComputeRxWindowParameters( void )
 {
-
     // Compute Rx1 windows parameters
     RegionComputeRxWindowParameters( MacCtx.NvmCtx->Region,
                                      RegionApplyDrOffset( MacCtx.NvmCtx->Region,
@@ -2417,7 +2414,6 @@ static void ComputeRxWindowParameters( void )
                                      MacCtx.NvmCtx->MacParams.MinRxSymbols,
                                      MacCtx.NvmCtx->MacParams.SystemMaxRxError,
                                      &MacCtx.RxWindow1Config );
-
     // Compute Rx2 windows parameters
     RegionComputeRxWindowParameters( MacCtx.NvmCtx->Region,
                                      MacCtx.NvmCtx->MacParams.Rx2Channel.Datarate,
@@ -2434,8 +2430,6 @@ static void ComputeRxWindowParameters( void )
         MacCtx.RxWindow1Delay = MacCtx.NvmCtx->MacParams.JoinAcceptDelay1 + MacCtx.RxWindow1Config.WindowOffset;
         MacCtx.RxWindow2Delay = MacCtx.NvmCtx->MacParams.JoinAcceptDelay2 + MacCtx.RxWindow2Config.WindowOffset;
     }
-
-    //e_printf("RX1 delay %d, RX2 delay %d, RX 1 symb timeout : %d\n", MacCtx.RxWindow1Delay, MacCtx.RxWindow2Delay, MacCtx.RxWindow1Config.WindowTimeout );
 }
 
 static LoRaMacStatus_t VerifyTxFrame( void )
@@ -2491,7 +2485,7 @@ static LoRaMacStatus_t ScheduleTx( bool allowDelayedTx )
 {
     LoRaMacStatus_t status = LORAMAC_STATUS_PARAMETER_INVALID;
     NextChanParams_t nextChan;
-    
+
     // Check class b collisions
     status = CheckForClassBCollision( );
     if( status != LORAMAC_STATUS_OK )
@@ -2512,7 +2506,7 @@ static LoRaMacStatus_t ScheduleTx( bool allowDelayedTx )
     nextChan.AggrTimeOff = MacCtx.NvmCtx->AggregatedTimeOff;
     nextChan.Datarate = MacCtx.NvmCtx->MacParams.ChannelsDatarate;
     nextChan.DutyCycleEnabled = MacCtx.NvmCtx->DutyCycleOn;
-    nextChan.ElapsedTime = SysTimeSub( SysTimeGetMcuTime( ), MacCtx.NvmCtx->InitializationTime );
+    nextChan.ElapsedTimeSinceStartUp = SysTimeSub( SysTimeGetMcuTime( ), MacCtx.NvmCtx->InitializationTime );
     nextChan.LastAggrTx = MacCtx.NvmCtx->LastTxDoneTime;
     nextChan.LastTxIsJoinRequest = false;
     nextChan.Joined = true;
@@ -2554,7 +2548,6 @@ static LoRaMacStatus_t ScheduleTx( bool allowDelayedTx )
 
     // Verify TX frame
     status = VerifyTxFrame( );
-  
     if( status != LORAMAC_STATUS_OK )
     {
         return status;
@@ -2861,7 +2854,6 @@ LoRaMacStatus_t SendFrameOnChannel( uint8_t channel )
     MacCtx.McpsConfirm.TxTimeOnAir = MacCtx.TxTimeOnAir;
     MacCtx.MlmeConfirm.TxTimeOnAir = MacCtx.TxTimeOnAir;
 
-  
     if( LoRaMacClassBIsBeaconModeActive( ) == true )
     {
         // Currently, the Time-On-Air can only be computed when the radio is configured with
@@ -2881,7 +2873,6 @@ LoRaMacStatus_t SendFrameOnChannel( uint8_t channel )
     }
 
     LoRaMacClassBHaltBeaconing( );
-    
 
     // Secure frame
     status = SecureFrame( MacCtx.NvmCtx->MacParams.ChannelsDatarate, MacCtx.Channel );

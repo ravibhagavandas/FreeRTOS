@@ -525,9 +525,6 @@ extern void GPIOIRQ_Enable(void);
 static void ledBlinkLoopTask(void * params)
 {
     uart_config_t uart_config = DEFAULT_VALUE; 
-    ledBlink
-  
-    //DelayMs(1000);
 
     UartMcuInit(&Uart1, 1, UART_TX, UART_RX);
     UartMcuConfig(&Uart1, RX_TX, uart_config.baudrate, 
@@ -543,14 +540,12 @@ static void ledBlinkLoopTask(void * params)
     GpioWrite(&Led2,1);
     DelayMs(1000);
     
+    e_printf("HelloWorld!\r\n");
+    
     GpioWrite(&Led1,0);
     GpioWrite(&Led2,0);
-    
-    e_printf("Welcome\n");
-  
-    
+        
     DelayMs(1000);
-    
   }
   
   vTaskDelete(NULL);

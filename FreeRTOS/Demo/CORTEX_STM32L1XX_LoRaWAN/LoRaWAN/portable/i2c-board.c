@@ -15,6 +15,15 @@ Maintainer: Miguel Luis and Gregory Cristian
 #include "board.h"
 #include "i2c-board.h"
 
+#ifndef SUCCESS
+#define SUCCESS                                     1
+#endif
+
+#ifndef FAIL
+#define FAIL                                        0
+#endif
+
+
 /*!
  *  The value of the maximal timeout for I2C waiting loops
  */
