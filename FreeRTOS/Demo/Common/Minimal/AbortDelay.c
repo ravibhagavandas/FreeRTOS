@@ -132,6 +132,7 @@ system so the actual block time might be greater than that expected, but it
 should be within an acceptable upper bound. */
 const TickType_t xAllowableMargin = pdMS_TO_TICKS( 7 );
 
+static uint32_t lastError = 0;
 /*-----------------------------------------------------------*/
 
 void vCreateAbortDelayTasks( void )
@@ -177,6 +178,7 @@ const TickType_t xStartMargin = 2UL;
 		if( xTaskAbortDelay( xBlockingTask ) != pdPASS )
 		{
 			xErrorOccurred = pdTRUE;
+            lastError = __LINE__;
 		}
 
 		/* Reset the priority to the normal controlling priority. */
@@ -287,6 +289,7 @@ BaseType_t xReturned;
 	if( xReturned != pdFALSE )
 	{
 		xErrorOccurred = pdTRUE;
+        lastError = __LINE__;
 	}
 }
 /*-----------------------------------------------------------*/
@@ -387,6 +390,7 @@ uint32_t ulReturn;
 	if( ulReturn != 0 )
 	{
 		xErrorOccurred = pdTRUE;
+        lastError = __LINE__;
 	}
 	prvCheckExpectedTimeIsWithinAnAcceptableMargin( xTimeAtStart, xHalfMaxBlockTime );
 
@@ -432,6 +436,7 @@ EventBits_t xBitsToWaitFor = ( EventBits_t ) 0x01, xReturn;
 	if( xReturn != 0x00 )
 	{
 		xErrorOccurred = pdTRUE;
+        lastError = __LINE__;
 	}
 	prvCheckExpectedTimeIsWithinAnAcceptableMargin( xTimeAtStart, xMaxBlockTime );
 
@@ -444,6 +449,7 @@ EventBits_t xBitsToWaitFor = ( EventBits_t ) 0x01, xReturn;
 	if( xReturn != 0x00 )
 	{
 		xErrorOccurred = pdTRUE;
+        lastError = __LINE__;
 	}
 	prvCheckExpectedTimeIsWithinAnAcceptableMargin( xTimeAtStart, xHalfMaxBlockTime );
 
@@ -455,6 +461,7 @@ EventBits_t xBitsToWaitFor = ( EventBits_t ) 0x01, xReturn;
 	if( xReturn != 0x00 )
 	{
 		xErrorOccurred = pdTRUE;
+        lastError = __LINE__;
 	}
 	prvCheckExpectedTimeIsWithinAnAcceptableMargin( xTimeAtStart, xMaxBlockTime );
 
@@ -501,6 +508,7 @@ uint8_t uxRxData;
 	if( xReturn != 0x00 )
 	{
 		xErrorOccurred = pdTRUE;
+        lastError = __LINE__;
 	}
 	prvCheckExpectedTimeIsWithinAnAcceptableMargin( xTimeAtStart, xMaxBlockTime );
 
@@ -513,6 +521,7 @@ uint8_t uxRxData;
 	if( xReturn != 0x00 )
 	{
 		xErrorOccurred = pdTRUE;
+        lastError = __LINE__;
 	}
 	prvCheckExpectedTimeIsWithinAnAcceptableMargin( xTimeAtStart, xHalfMaxBlockTime );
 
@@ -524,6 +533,7 @@ uint8_t uxRxData;
 	if( xReturn != 0x00 )
 	{
 		xErrorOccurred = pdTRUE;
+        lastError = __LINE__;
 	}
 	prvCheckExpectedTimeIsWithinAnAcceptableMargin( xTimeAtStart, xMaxBlockTime );
 
@@ -562,6 +572,7 @@ uint8_t ucItemToQueue;
 	if( xReturn != pdPASS )
 	{
 		xErrorOccurred = pdTRUE;
+        lastError = __LINE__;
 	}
 
 	/* Note the time before the delay so the length of the delay is known. */
@@ -572,6 +583,7 @@ uint8_t ucItemToQueue;
 	if( xReturn != pdFALSE )
 	{
 		xErrorOccurred = pdTRUE;
+        lastError = __LINE__;
 	}
 	prvCheckExpectedTimeIsWithinAnAcceptableMargin( xTimeAtStart, xMaxBlockTime );
 
@@ -595,6 +607,7 @@ uint8_t ucItemToQueue;
 	if( xReturn != pdFALSE )
 	{
 		xErrorOccurred = pdTRUE;
+        lastError = __LINE__;
 	}
 	prvCheckExpectedTimeIsWithinAnAcceptableMargin( xTimeAtStart, xMaxBlockTime );
 
@@ -631,6 +644,7 @@ SemaphoreHandle_t xSemaphore;
 	if( xReturn != pdFALSE )
 	{
 		xErrorOccurred = pdTRUE;
+        lastError = __LINE__;
 	}
 	prvCheckExpectedTimeIsWithinAnAcceptableMargin( xTimeAtStart, xMaxBlockTime );
 
@@ -654,6 +668,7 @@ SemaphoreHandle_t xSemaphore;
 	if( xReturn != pdFALSE )
 	{
 		xErrorOccurred = pdTRUE;
+        lastError = __LINE__;
 	}
 	prvCheckExpectedTimeIsWithinAnAcceptableMargin( xTimeAtStart, xMaxBlockTime );
 
@@ -687,6 +702,7 @@ BaseType_t xReturn;
 	if( xReturn != pdFALSE )
 	{
 		xErrorOccurred = pdTRUE;
+        lastError = __LINE__;
 	}
 	prvCheckExpectedTimeIsWithinAnAcceptableMargin( xTimeAtStart, xHalfMaxBlockTime );
 
@@ -698,6 +714,7 @@ BaseType_t xReturn;
 	if( xReturn != pdFALSE )
 	{
 		xErrorOccurred = pdTRUE;
+        lastError = __LINE__;
 	}
 	prvCheckExpectedTimeIsWithinAnAcceptableMargin( xTimeAtStart, xMaxBlockTime );
 }
@@ -714,6 +731,7 @@ TickType_t xTimeNow, xActualBlockTime;
 	if( xActualBlockTime < xExpectedBlockTime )
 	{
 		xErrorOccurred = pdTRUE;
+        lastError = __LINE__;
 	}
 
 	/* The actual block time can be greater than the expected block time, as it
@@ -722,6 +740,7 @@ TickType_t xTimeNow, xActualBlockTime;
 	if( xActualBlockTime > ( xExpectedBlockTime + xAllowableMargin ) )
 	{
 		xErrorOccurred = pdTRUE;
+        lastError = __LINE__;
 	}
 }
 /*-----------------------------------------------------------*/
@@ -750,6 +769,11 @@ BaseType_t xReturn = pdPASS;
 
 	xLastBlockingCycleCount = xBlockingCycles;
 	xLastControllingCycleCount = xControllingCycles;
+
+    if (xReturn == pdFAIL)
+    {
+        //printf(("Abort delay last error line num %u.\n", lastError));
+    }
 
 	return xReturn;
 }

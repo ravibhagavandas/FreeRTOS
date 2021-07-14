@@ -175,6 +175,8 @@ static char *pcStatusMessage = "No errors";
 semaphore tracing API functions.  It has no other purpose. */
 static SemaphoreHandle_t xMutexToDelete = NULL;
 
+static uint32_t tickCounter = 0;
+
 /*-----------------------------------------------------------*/
 
 int main_full( void )
@@ -247,7 +249,8 @@ int main_full( void )
 	return 0;
 }
 /*-----------------------------------------------------------*/
-
+extern uint32_t systemTicks;
+extern uint32_t maxContextSwitchTime;
 static void prvCheckTask( void *pvParameters )
 {
 TickType_t xNextWakeTime;
@@ -390,9 +393,11 @@ HeapStats_t xHeapStats;
 		configASSERT( xHeapStats.xAvailableHeapSpaceInBytes == xPortGetFreeHeapSize() );
 		configASSERT( xHeapStats.xMinimumEverFreeBytesRemaining == xPortGetMinimumEverFreeHeapSize() );
 
-		printf( "%s - tick count %zu - free heap %zu - min free heap %zu - largest free block %zu \r\n",
+		printf( "%s - tick count %zu - system ticks(ms) %u - max ctxt switch time %u - free heap %zu - min free heap %zu - largest free block %zu \r\n",
 			pcStatusMessage,
 			xTaskGetTickCount(),
+            systemTicks,
+            maxContextSwitchTime,
 			xHeapStats.xAvailableHeapSpaceInBytes,
 			xHeapStats.xMinimumEverFreeBytesRemaining,
 			xHeapStats.xSizeOfLargestFreeBlockInBytes );

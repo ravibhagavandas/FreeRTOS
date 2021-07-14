@@ -176,6 +176,7 @@ static const char *pc54ByteString = "01234567891abcdefghijklmnopqrstuvwxyzABCDEF
 /* Used to log the status of the tests contained within this file for reporting
 to a monitoring task ('check' task). */
 static BaseType_t xErrorStatus = pdPASS;
+static uint32_t lastError = 0;
 
 /*-----------------------------------------------------------*/
 
@@ -642,6 +643,7 @@ BaseType_t xNonBlockingReceiveError = pdFALSE;
 				if( memcmp( ( const void * ) &( pc54ByteString[ xNextChar ] ), ( const void * ) cRxString, xBytesToTest ) != 0 )
 				{
 					xNonBlockingReceiveError = pdTRUE;
+                    lastError = __LINE__;
 				}
 
 				/* Then move back to the start of the string to test the
@@ -662,6 +664,7 @@ BaseType_t xNonBlockingReceiveError = pdFALSE;
 			if( memcmp( ( const void * ) &( pc54ByteString[ xNextChar ] ), ( const void * ) &( cRxString[ xStartIndex ] ), xBytesToTest ) != 0 )
 			{
 				xNonBlockingReceiveError = pdTRUE;
+                lastError = __LINE__;
 			}
 
 			if( xNonBlockingReceiveError == pdFALSE )
@@ -1096,6 +1099,7 @@ BaseType_t xErrorDetected = pdFALSE;
 					if( ( xBytesReceived - xReadBlockTime ) > xAllowableMargin )
 					{
 						xErrorDetected = pdTRUE;
+                        lastError = __LINE__;
 					}
 				}
 				else if( xReadBlockTime != xBytesReceived )
@@ -1107,6 +1111,7 @@ BaseType_t xErrorDetected = pdFALSE;
 					if( xBytesReceived != 1 )
 					{
 						xErrorDetected = pdTRUE;
+                        lastError = __LINE__;
 					}
 				}
 			}
@@ -1127,11 +1132,13 @@ BaseType_t xErrorDetected = pdFALSE;
 					if( xBytesReceived != 1 )
 					{
 						xErrorDetected = pdTRUE;
+                        lastError = __LINE__;
 					}
 				}
 				else if( ( xBytesReceived - xTriggerLevel ) > xAllowableMargin )
 				{
 					xErrorDetected = pdTRUE;
+                    lastError = __LINE__;
 				}
 			}
 			else
@@ -1149,22 +1156,28 @@ BaseType_t xErrorDetected = pdFALSE;
 					if( xBytesReceived != 1 )
 					{
 						xErrorDetected = pdTRUE;
+                        lastError = __LINE__;
 					}
 				}
 				else if( ( xBytesReceived - xReadBlockTime ) > xAllowableMargin )
 				{
 					xErrorDetected = pdTRUE;
+                    lastError = __LINE__;
 				}
 			}
 
 			if( xBytesReceived > sizeof( ucRxData ) )
 			{
 				xErrorDetected = pdTRUE;
+                lastError = __LINE__;
+
 			}
 			else if( memcmp( ( void * ) ucRxData, ( const void * ) pcDataSentFromInterrupt, xBytesReceived ) != 0 )
 			{
 				/* Received data didn't match that expected. */
 				xErrorDetected = pdTRUE;
+                lastError = __LINE__;
+
 			}
 
 			if( xErrorDetected == pdFALSE )
@@ -1193,6 +1206,7 @@ BaseType_t x;
 		if( ulLastEchoLoopCounters[ x ] == ulEchoLoopCounters[ x ] )
 		{
 			xErrorStatus = pdFAIL;
+            printf("echo loop counters same, %u\n", ulLastEchoLoopCounters[x]);
 		}
 		else
 		{
@@ -1202,6 +1216,7 @@ BaseType_t x;
 
 	if( ulNonBlockingRxCounter == ulLastNonBlockingRxCounter )
 	{
+        printf("ulNonBlockingRxCounter counter unchanged, %u\n", ulNonBlockingRxCounter);
 		xErrorStatus = pdFAIL;
 	}
 	else
@@ -1211,6 +1226,7 @@ BaseType_t x;
 
 	if( ulLastInterruptTriggerCounter == ulInterruptTriggerCounter )
 	{
+        printf("ulLastInterruptTriggerCounter counters unchanged, %u\n", ulLastInterruptTriggerCounter);
 		xErrorStatus = pdFAIL;
 	}
 	else
@@ -1226,6 +1242,7 @@ BaseType_t x;
 		{
 			if( ulLastSenderLoopCounters[ x ] == ulSenderLoopCounters[ x ] )
 			{
+                printf("ulLastSenderLoopCounters unchanged, %u\n", ulLastSenderLoopCounters[x]);
 				xErrorStatus = pdFAIL;
 			}
 			else
@@ -1235,6 +1252,11 @@ BaseType_t x;
 		}
 	}
 	#endif /* configSUPPORT_STATIC_ALLOCATION */
+
+    if (xErrorStatus == pdFAIL)
+    {
+        printf("Last detected error at line %u\n", lastError);
+    }
 
 	return xErrorStatus;
 }

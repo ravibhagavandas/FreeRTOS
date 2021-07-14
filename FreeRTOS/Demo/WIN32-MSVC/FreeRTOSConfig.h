@@ -114,7 +114,7 @@ functions anyway. */
 
 /* The Win32 target is capable of running all the tests tasks at the same
  * time. */
-#define configRUN_ADDITIONAL_TESTS				1
+#define configRUN_ADDITIONAL_TESTS				0
 
 /* It is a good idea to define configASSERT() while developing.  configASSERT()
 uses the same semantics as the standard C assert() macro. */

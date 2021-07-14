@@ -216,6 +216,7 @@ uint32_t ulLastCycleCount = 0;
 	/* Check the demo is still running. */
 	if( ulLastCycleCount == ulCycleCount )
 	{
+        printf("Cycle count are same = %u", ulCycleCount);
 		xDemoStatus = pdFAIL;
 	}
 	else
